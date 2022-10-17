@@ -1,14 +1,14 @@
-/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet. You don't have to edit this line.*/
+/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet*/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
 
 body {
+  background-color: #eae2b7;
   color: #003049;
   font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
   padding: 40px;
-  background-color: #eae2b7
 }
 
-/* Set the font family for any h1, h2, or h3 heading */
+/* Headings */
 h1,
 h2,
 h3 {
@@ -16,8 +16,66 @@ h3 {
   text-align: center;
 }
 
-header{
-  text-align: center
+/* Header */
+header {
+  text-align: center;
+}
+
+.headerElements {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 4px;
+  align-items: center;
+  justify-items: center; 
+}
+
+/* About */
+.center {
+  text-align: center;
+}
+
+.section1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.description {
+  text-align: left;
+}
+
+.section2 {
+  text-align: left;
+}
+
+/* Portfolio section */
+#portfolio {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#portfolio p {
+  text-align: center;
+  font-size: 14px;
+} 
+
+.portfolioH2 {
+  margin: 0 0 -50px 0;
+}
+
+.item {
+  flex: 1;
+  padding: 3px;
+  margin: 2px;
+}
+
+
+/* Containers */
+div {
+  background-color: #eae2b7;
+  margin: auto;
+  width: 600px;
 }
 
 article {
@@ -29,34 +87,46 @@ article div {
   width: 100%;
 }
 
-p,
-nav {
+/* Paragraphs */
+p {
   line-height: 1.5;
 }
 
-/* The div container constrains the content width within the main container to 600px */
-div {
-  margin: auto;
-  width: 600px;
+/* Links */
+a:link {
+  color: #d62828;
 }
 
+a:hover {
+  color: #f77f00;
+}
+
+nav a {
+  padding-left: 20px;
+}
+
+/* Images */
 img {
   width: 100%;
   max-width: 200px;
   height: auto;
 }
 
+.image-circle {
+  border: 2px solid #003049;
+  border-radius: 50%;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+}
+
+/* Other page elements */
 hr {
   border: 1px solid black;
 }
 
-/* Add your solution below */
-
-.image-circle {
-  border: 2px solid #003049;
-  border-radius: 50%
-}
-
-footer {
-  text-align: center
+.hr1 {
+  margin: 0px 0px 70px 0
 }
